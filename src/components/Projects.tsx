@@ -34,6 +34,13 @@ export default function Projects() {
       technologies: ["Azure", "Microsoft Sentinel", "KQL", "SIEM", "Log Analytics", "Cloud Security"],
       isExternal: true
     },
+    {
+      title: "Classifying Diseases/Illnesses",
+      description: "Developed machine learning models (Gaussian Naive Bayes, SVM, Decision Trees, Random Forest) to classify illnesses based on patient symptoms, aiding physicians in preparation for patient visits.",
+      link: "https://github.com/jaysomp/Projects/blob/main/Data-Science-Projects/Classifying-Diseases-Illnesses/Disease_PredictionModel.ipynb",
+      technologies: ["Python", "Scikit-Learn", "Machine Learning", "Data Analysis", "Random Forest"],
+      isExternal: true,
+    },
 
   
 
