@@ -28,12 +28,15 @@ export default function Projects() {
       onClick: handleScrollToHomelab,
     },
     {
-      title: "Classifying Diseases/Illnesses",
-      description: "Developed machine learning models (Gaussian Naive Bayes, SVM, Decision Trees, Random Forest) to classify illnesses based on patient symptoms, aiding physicians in preparation for patient visits.",
-      link: "https://github.com/jaysomp/Projects/blob/main/Data-Science-Projects/Classifying-Diseases-Illnesses/Disease_PredictionModel.ipynb",
-      technologies: ["Python", "Scikit-Learn", "Machine Learning", "Data Analysis", "Random Forest"],
-      isExternal: true,
-    }
+      title: "Azure SOC Simulation",
+      description: "Built a cloud-based Security Operations Center (SOC) simulation using Microsoft Sentinel, Azure Virtual Machines, and Network Security Groups. Configured SIEM log ingestion pipelines with Log Analytics and KQL to detect and visualize cyber threats, leveraging GeoIP data for geographic insights.",
+      link: "https://github.com/jaysomp/Azure-SOC-Sim",
+      technologies: ["Azure", "Microsoft Sentinel", "KQL", "SIEM", "Log Analytics", "Cloud Security"],
+      isExternal: true
+    },
+
+  
+
   ];
   
 
