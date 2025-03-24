@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Copy error.html to dist
-        run: cp /etc/error.html dist/error.html
+        run: cp etc/error.html dist/error.html
 
       - name: Deploy to GitHub Pages
         run: |
