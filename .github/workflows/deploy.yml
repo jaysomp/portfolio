@@ -27,12 +27,12 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Copy error.html to dist
-        run: cp etc/error.html dist/error.html
-
       - name: Deploy to GitHub Pages
         run: |
           npm run deploy
+      
+      - name: Copy error.html to dist
+        run: cp etc/error.html dist/error.html
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
