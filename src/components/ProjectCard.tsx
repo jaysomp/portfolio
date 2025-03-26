@@ -1,14 +1,15 @@
 import React from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Github } from 'lucide-react';
 
 interface ProjectCardProps {
   title: string;
   description: string;
   link: string;
   technologies: string[];
-  isExternal: boolean; // Distinguish between external and local navigation
-  onClick?: () => void; // Optional onClick handler
-  videoUrl?: string; // Optional video URL for embedding
+  isExternal: boolean;
+  onClick?: () => void;
+  videoUrl?: string;
+  repo?: string; // Optional GitHub repository link
 }
 
 export default function ProjectCard({
@@ -19,10 +20,11 @@ export default function ProjectCard({
   isExternal,
   onClick,
   videoUrl,
+  repo,
 }: ProjectCardProps) {
   const handleClick = (event: React.MouseEvent) => {
     if (!isExternal && onClick) {
-      event.preventDefault(); // Prevent default link behavior for internal scrolling
+      event.preventDefault();
       onClick();
     }
   };
@@ -53,16 +55,29 @@ export default function ProjectCard({
           />
         </div>
       )}
-      <a
-        href={isExternal ? link : "#"}
-        onClick={handleClick}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
-        className="flex items-center space-x-1 text-purple-400 hover:text-purple-300 transition-colors group"
-      >
-        <span>View Project</span>
-        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </a>
+      <div className="flex items-center space-x-4">
+        <a
+          href={isExternal ? link : "#"}
+          onClick={handleClick}
+          target={isExternal ? "_blank" : undefined}
+          rel={isExternal ? "noopener noreferrer" : undefined}
+          className="flex items-center space-x-1 text-purple-400 hover:text-purple-300 transition-colors group"
+        >
+          <span>View Project</span>
+          <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </a>
+        {repo && (
+          <a
+            href={repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center space-x-1 text-gray-400 hover:text-white transition-colors group"
+          >
+            <Github className="w-4 h-4" />
+            <span>GitHub</span>
+          </a>
+        )}
+      </div>
     </div>
   );
 }
