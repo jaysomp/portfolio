@@ -40,7 +40,8 @@ jobs:
         run: sed -i 's|/portfolio/assets/|/assets/|g' dist/index.html
 
       - name: Fix filepaths for index.html S3 Deployment
-        run: sed -i 's|/portfolio/assets/|/assets/|g' dist/assets/index-BHL6caNL.js
+        run: sed -i 's|/portfolio/assets/|/assets/|g' dist/assets/index-*.js
+
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
