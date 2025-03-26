@@ -1,6 +1,4 @@
-name: Deploy to Github Pages
-
-# name: Deploy to Github Pages and S3
+name: Deploy to Github Pages and S3
 
 on:
   push:
