@@ -35,8 +35,8 @@ jobs:
           git config --global user.name "github-actions[bot]"
           npm run deploy -- -r https://x-access-token:${{ secrets.TOKEN }}@github.com/${{ github.repository }}.git
       
-      # - name: Copy error.html to dist
-      #   run: cp etc/error.html dist/error.html
+      - name: Copy error.html to dist
+        run: cp etc/error.html dist/error.html
       
       - name: Fix filepaths for index.html S3 Deployment
         run: sed -i 's|/portfolio/assets/|/assets/|g' dist/index.html
