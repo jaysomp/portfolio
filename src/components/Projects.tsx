@@ -12,6 +12,21 @@ export default function Projects() {
 
   const projects = [
     {
+      title: "This Website Itself! 🚀",
+      description: "Built and deployed this portfolio website with a CI/CD pipeline that automates deployments to both AWS S3 and GitHub Pages. The infrastructure is managed using Terraform, and GitHub Actions handles automatic updates on every push to the main branch.",
+      link: "http://jaysomp-portfolio.s3-website-us-east-1.amazonaws.com/",
+      repo: "https://github.com/jaysomp/portfolio",
+      technologies: ["CI/CD", "AWS S3", "GitHub Actions", "Terraform", "Cloud Deployment", "Automation"],
+      isExternal: true
+    },
+    {
+      title: "Azure SOC Simulation",
+      description: "Built a cloud-based Security Operations Center (SOC) simulation using Microsoft Sentinel, Azure Virtual Machines, and Network Security Groups. Configured SIEM log ingestion pipelines with Log Analytics and KQL to detect and visualize cyber threats, leveraging GeoIP data for geographic insights.",
+      link: "https://github.com/jaysomp/Azure-SOC-Sim",
+      technologies: ["Azure", "Microsoft Sentinel", "KQL", "SIEM", "Log Analytics", "Cloud Security"],
+      isExternal: true
+    },
+    {
       title: "AI-Powered UFC Fight Analytics: LLM-Driven Insights Platform",
       description: "Developed an AI-powered chatbot using a GPT-4 LLM agent system integrated with LangChain for natural language fight analysis and predictions. Combined XGBoost for predictive modeling, real-time data visualization with PandasAI, and a BCNF-normalized SQLite database for efficient querying, all delivered through a sleek Streamlit interface.",
       link: "https://github.com/jaysomp/tko-analytics",
