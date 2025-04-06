@@ -1,4 +1,4 @@
-# ** Jaydeep's Portfolio Website**  
+# Jaydeep's Portfolio Website
 
 This portfolio website is hosted **simultaneously** on **GitHub Pages** and an **Amazon S3 bucket**, with the S3 infrastructure managed using **Terraform**.  
 
