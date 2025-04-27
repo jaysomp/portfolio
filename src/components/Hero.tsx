@@ -54,9 +54,7 @@ export default function Hero() {
       </div>
 
       <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-        Georgia State University Computer Science graduate with a focus on Data Science and Cybersecurity. Previously interned at Georgia Tech Research Institute, 
-        specializing in Large Language Models and DevSecOps. Passionate about solving complex problems through innovative software solutions and exploring the intersection 
-        of AI and security. Actively pursuing interests in IT fields such as networking, cloud computing, cybersecurity, data science, and machine learning.
+      Georgia State University Computer Science graduate with a focus on Cloud Engineering and DevOps. Currently working as a Software Engineer developing cloud-based solutions for agentic AI applications. Passionate about building scalable cloud infrastructures, automating deployments, and advancing cloud technologies.
       </p>
 
       
