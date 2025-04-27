@@ -34,7 +34,7 @@ export default function Hero() {
         <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700/50 hover:border-purple-500/50 transition-colors group">
           <Code2 className="w-6 h-6 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
           <h3 className="font-semibold mb-1 font-mono group-hover:text-purple-300 transition-colors">Development</h3>
-          <p className="text-sm text-gray-400">Python, JavaScript, TypeScript</p>
+          <p className="text-sm text-gray-400">Python, Java, TypeScript</p>
         </div>
         <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700/50 hover:border-purple-500/50 transition-colors group">
           <Command className="w-6 h-6 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
@@ -48,8 +48,8 @@ export default function Hero() {
         </div>
         <div className="bg-gray-800/50 p-4 rounded-lg border border-gray-700/50 hover:border-purple-500/50 transition-colors group">
           <Shield className="w-6 h-6 text-purple-400 mb-2 group-hover:scale-110 transition-transform" />
-          <h3 className="font-semibold mb-1 font-mono group-hover:text-purple-300 transition-colors">Security</h3>
-          <p className="text-sm text-gray-400">DevSecOps, Pen Testing</p>
+          <h3 className="font-semibold mb-1 font-mono group-hover:text-purple-300 transition-colors">Cloud</h3>
+          <p className="text-sm text-gray-400">AWS, Azure</p>
         </div>
       </div>
 
