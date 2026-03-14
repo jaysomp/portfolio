@@ -54,7 +54,7 @@ export default function Hero() {
       </div>
 
       <p className="text-xl text-gray-300 max-w-2xl leading-relaxed">
-      Georgia State University Computer Science graduate with a focus on Cloud Engineering and DevOps. Currently working as a Software Engineer developing cloud-based solutions for agentic AI applications. Passionate about building scalable cloud infrastructures, automating deployments, and advancing cloud technologies.
+          Cybersecurity graduate student at the Georgia Institute of Technology and Computer Science graduate from Georgia State University. Currently working as a Systems Analyst in Security, focusing on threat detection, incident response, and security automation. Experienced in cloud infrastructure, Infrastructure as Code, and DevSecOps practices, with a passion for securing scalable systems and building resilient infrastructure.
       </p>
 
       
